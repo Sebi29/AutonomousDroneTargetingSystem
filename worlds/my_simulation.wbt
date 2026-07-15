@@ -1,0 +1,206 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/Road.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Pavement.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/buildings/protos/Windmill.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/buildings/protos/SmallManor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/manhole/protos/SquareManhole.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/trees/protos/Pine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/trees/protos/Forest.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/toyota/ToyotaPrius.proto"
+
+WorldInfo {
+  info [
+    "This demonstration shows a DJI Mavic 2 PRO flying over a rural area."
+    "After the drone has taken off, you can control it with the keyboard of your computer."
+  ]
+  title "DJI Mavic 2 PRO demo"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+}
+Viewpoint {
+  orientation -0.052546725124471685 -0.9497725606801938 0.30849785194986534 5.2801319171776875
+  position -53.56396347020959 13.544840976030407 16.317766957311264
+  near 0.2
+  follow "Mavic 2 PRO"
+  followSmoothness 0.2
+}
+TexturedBackground {
+  luminosity 3
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 400 400
+  tileSize 6 6
+  appearance SandyGround {
+  }
+}
+Road {
+  translation -43.8 9.2 0.01
+  rotation 0 0 1 -0.3926996938995747
+  width 3
+  numberOfLanes 1
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    25 0 0
+    50 0 0
+    75 0 0
+    100 0 0
+    120 10 0
+    135 25 0
+    150 45 0
+    165 70 0
+    178 98 0
+    188 128 0
+    195 160 0
+    200 200 0
+  ]
+  splineSubdivision 8
+  appearance Pavement {
+    type "black stone"
+  }
+}
+Windmill {
+  translation -43.8656 -19.8433 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+}
+Windmill {
+  translation -44.258 -27.3356 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(1)"
+}
+Windmill {
+  translation -46.2448 30.573 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(2)"
+}
+Windmill {
+  translation -38.75 23.4 0
+  name "windmill(3)"
+}
+SmallManor {
+  translation -60.325 9.04255 9.23706e-14
+  rotation 0 0 -1 0.392394
+}
+SquareManhole {
+  translation -50.062 11.9092 -0.03
+  rotation 0 0 -1 0.405789
+}
+CardboardBox {
+  translation -20.3692 5.46737 0.3
+  rotation 0 0 1 -1.8325953071795862
+}
+Pine {
+  translation -14.0083 -14.4828 0
+  rotation 0 0 1 2.61799
+}
+Pine {
+  translation -19.6195 -24.3783 0
+  rotation 0 0 1 2.87979
+  name "pine tree(1)"
+}
+Pine {
+  translation -22.0129 6.20205 0
+  name "pine tree(3)"
+}
+Pine {
+  translation -10.6926 -25.1339 0
+  name "pine tree(4)"
+}
+Pine {
+  translation -14.3441 14.5621 0
+  name "pine tree(5)"
+}
+Pine {
+  translation -26.6328 -7.1707 0
+  name "pine tree(6)"
+}
+Pine {
+  translation -9.37029 14.0209 0
+  rotation 0 0 1 -2.6179953071795863
+  name "pine tree(2)"
+}
+Forest {
+  translation 0 0 -0.01
+  shape [
+    200 200
+    200 0
+    50 0
+    50 50
+    -50 50
+    -50 -50
+    50 -50
+    50 0
+    200 0
+    200 -200
+    -200 -200
+    -200 200
+  ]
+  density 0.01
+  type "cherry tree"
+  randomSeed 1
+  maxHeight 12
+  minHeight 6
+  maxRadius 6
+  minRadius 3
+}
+Mavic2Pro {
+  hidden position_0_0 -1.125292415709553e-09
+  hidden position_6_0 -2.3918007740875468e-08
+  hidden rotation_7 0 -1 0 2.9802322387695313e-08
+  hidden position_7_0 8.425587550459078e-08
+  hidden rotation_8 0.9999999999999999 0 0 8.429369702178807e-08
+  translation -49.9968 11.8846 0.0679864
+  rotation 0.11395597828272755 -0.16229596907028634 -0.9801398132088928 0.353368
+  controller "drone_brain"
+  supervisor TRUE
+  bodySlot [
+    Camera {
+      translation 0 0 -0.25
+      rotation -0.38251961228329556 0 0.9239473719961746 3.141592653589793
+      name "bombsight"
+      width 640
+      height 480
+    }
+  ]
+  cameraSlot [
+    Camera {
+      width 400
+      height 240
+      near 0.2
+    }
+  ]
+}
+ToyotaPrius {
+  hidden position_0_0 0.00017347952115165429
+  hidden position2_0_0 1.8652055994374348
+  hidden position_0_1 0.00017259787270494968
+  hidden position2_0_1 1.8653221454003752
+  hidden position_0_2 1.4881587821736255
+  hidden position_0_3 1.489152804853141
+  hidden rotation_1 -8.673976028753243e-05 -0.999999994168397 -6.433832443592795e-05 1.8652056050181256
+  hidden rotation_2 8.629893606859635e-05 0.9999999942280196 -6.400355226221295e-05 1.8653221509238136
+  hidden rotation_3 0 -1 0 1.4881587821736255
+  hidden rotation_4 0 1 0 1.4891528048531408
+  translation -43.4373 9.08839 0.5
+  rotation 0 0 1 -0.393
+  controller "car_driver"
+  sensorsSlotCenter [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}

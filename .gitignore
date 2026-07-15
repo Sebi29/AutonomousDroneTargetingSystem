@@ -1,0 +1,5 @@
+*.pt
+runs/
+top_down_dataset/
+webots_dataset/
+__pycache__/
