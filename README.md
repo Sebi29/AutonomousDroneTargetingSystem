@@ -19,7 +19,7 @@ Acest proiect implementează un sistem autonom de control și vizare pentru dron
 Deschideți un terminal și rulați comanda:
 
 ```bash
-git clone https://github.com/Sebi29/AutonomousDroneTargetingSystem.git(https://github.com/Sebi29/AutonomousDroneTargetingSystem.git)
+git clone https://github.com/Sebi29/AutonomousDroneTargetingSystem.git
 ```
 
 **2. Instalarea dependențelor:**
